@@ -7,9 +7,11 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import io.appium.java_client.android.AndroidDriver;
+
 public class getScreenShot {
 	
-	public static String capture(WebDriver driver, String screenShotName) throws IOException {
+	public static String capture(AndroidDriver driver, String screenShotName) throws IOException {
 		
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
