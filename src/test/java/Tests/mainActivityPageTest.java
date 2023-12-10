@@ -11,7 +11,7 @@ import Pages.mainActivityPage;
 	 
 	@Test(priority = 0)
 	public void clickOnDropdownTest() throws IOException, InterruptedException {
-		mainActivityPage map = new mainActivityPage(getDriver());
+		mainActivityPage map = new mainActivityPage();
 		map.clickOnDropdown();
 		map.enterName();
 		map.clickOnButton();

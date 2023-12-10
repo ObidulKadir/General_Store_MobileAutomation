@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-24T01:00:14Z" name="General.apk" finished-at="2023-11-24T01:00:46Z" duration-ms="31780">
+  <suite started-at="2023-12-10T17:26:17Z" name="General.apk" finished-at="2023-12-10T17:26:48Z" duration-ms="30558">
     <groups>
     </groups>
-    <test started-at="2023-11-24T01:00:14Z" name="Test" finished-at="2023-11-24T01:00:46Z" duration-ms="31780">
-      <class name="Tests.mainActivityPageTest">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:Tests.mainActivityPageTest@120f102b]" started-at="2023-11-24T07:00:07Z" name="getDriver" finished-at="2023-11-24T07:00:14Z" duration-ms="7354" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getDriver -->
-        <test-method signature="clickOnDropdownTest()[pri:0, instance:Tests.mainActivityPageTest@120f102b]" started-at="2023-11-24T07:00:14Z" name="clickOnDropdownTest" finished-at="2023-11-24T07:00:46Z" duration-ms="31768" status="PASS">
+    <test started-at="2023-12-10T17:26:17Z" name="mainActivityPage" finished-at="2023-12-10T17:26:48Z" duration-ms="30558">
+      <class name="Tests.productPageTest">
+        <test-method signature="clickOnDropdownTest()[pri:0, instance:Tests.productPageTest@41fecb8b]" started-at="2023-12-10T23:26:41Z" name="clickOnDropdownTest" finished-at="2023-12-10T23:26:48Z" duration-ms="6785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnDropdownTest -->
-        <test-method is-config="true" signature="removeApp()[pri:0, instance:Tests.mainActivityPageTest@120f102b]" started-at="2023-11-24T07:00:46Z" name="removeApp" finished-at="2023-11-24T07:00:53Z" duration-ms="6774" status="PASS">
+      </class> <!-- Tests.productPageTest -->
+      <class name="Tests.mainActivityPageTest">
+        <test-method is-config="true" signature="setAndroiDriver()[pri:0, instance:Tests.mainActivityPageTest@272ed83b]" started-at="2023-12-10T23:26:05Z" name="setAndroiDriver" finished-at="2023-12-10T23:26:17Z" duration-ms="12235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setAndroiDriver -->
+        <test-method signature="clickOnDropdownTest()[pri:0, instance:Tests.mainActivityPageTest@272ed83b]" started-at="2023-12-10T23:26:17Z" name="clickOnDropdownTest" finished-at="2023-12-10T23:26:41Z" duration-ms="23747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnDropdownTest -->
+        <test-method is-config="true" signature="removeApp()[pri:0, instance:Tests.mainActivityPageTest@272ed83b]" started-at="2023-12-10T23:26:48Z" name="removeApp" finished-at="2023-12-10T23:26:52Z" duration-ms="3658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeApp -->
       </class> <!-- Tests.mainActivityPageTest -->
-    </test> <!-- Test -->
+    </test> <!-- mainActivityPage -->
   </suite> <!-- General.apk -->
 </testng-results>

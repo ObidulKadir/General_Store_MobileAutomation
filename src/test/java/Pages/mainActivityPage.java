@@ -11,14 +11,14 @@ import org.openqa.selenium.support.PageFactory;
 import com.aventstack.extentreports.ExtentTest;
 import BaseFolder.driverSetup;
 import io.appium.java_client.android.AndroidDriver;
+import static BaseFolder.driverSetup.getDriver;
 
 public class mainActivityPage{
 	
 //		driverSetup driver = new driverSetup();
-		AndroidDriver driver;
-		public mainActivityPage(AndroidDriver driver) {
-			this.driver = driver;
-			PageFactory.initElements(driver, this);
+	
+		public mainActivityPage() throws MalformedURLException {
+			PageFactory.initElements(getDriver(), this);
 		}
 		
 		@FindBy(xpath="//android.widget.Spinner[@resource-id=\"com.androidsample.generalstore:id/spinnerCountry\"]")
@@ -56,12 +56,14 @@ public class mainActivityPage{
 				System.out.println("The locate of name is fail.");
 			}
 		}
-		public void clickOnButton() throws IOException, InterruptedException {
-			Thread.sleep(10000);
+		public void clickOnButton() throws InterruptedException {
+			Thread.sleep(3000);
 			try {
 				clickOnbtn.click();
+				Thread.sleep(3000);
 			} catch (Exception e) {
 				System.out.println("The locate of element is fail.");
 			}
+		
 		}
 }

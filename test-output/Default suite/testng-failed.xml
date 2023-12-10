@@ -5,9 +5,9 @@
     <classes>
       <class name="Tests.mainActivityPageTest">
         <methods>
-          <include name="getDriver"/>
-          <include name="mainActivityPageTest"/>
+          <include name="clickOnDropdownTest"/>
           <include name="removeApp"/>
+          <include name="setAndroiDriver"/>
         </methods>
       </class> <!-- Tests.mainActivityPageTest -->
     </classes>

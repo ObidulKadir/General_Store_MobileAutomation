@@ -2,9 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="General.apk">
 	<!-- -->
-	 <test name="Test">
+	 <test name="mainActivityPage">
 		<classes>
 			<class name="Tests.mainActivityPageTest" />
+			<class name="Tests.productPageTest" />
 		</classes>
 	</test>	
 </suite>

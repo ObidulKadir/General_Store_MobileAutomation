@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-General.apk" class="show-methods passed suite-General.apk"> (show)</a> <!-- show-methods passed suite-General.apk -->
                     </span>
                     <div class="method-list-content passed suite-General.apk">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-General.apk" title="Tests.productPageTest" class="method navigator-link" hash-for-method="clickOnDropdownTest">clickOnDropdownTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-General.apk" title="Tests.mainActivityPageTest" class="method navigator-link" hash-for-method="clickOnDropdownTest">clickOnDropdownTest</a> <!-- method navigator-link -->
@@ -132,6 +137,21 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-General.apk-class-passed -->
+          <div class="suite-General.apk-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.productPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnDropdownTest">
+                  </a> <!-- clickOnDropdownTest -->
+                  <span class="method-name">clickOnDropdownTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-General.apk-class-passed -->
         </div> <!-- panel General.apk -->
         <div panel-name="test-xml-General.apk" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -142,11 +162,12 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;General.apk&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test name=&quot;Test&quot;&gt;
+  &lt;test name=&quot;mainActivityPage&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Tests.mainActivityPageTest&quot;/&gt;
+      &lt;class name=&quot;Tests.productPageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- mainActivityPage --&gt;
 &lt;/suite&gt; &lt;!-- General.apk --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -158,7 +179,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">mainActivityPage (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -184,16 +205,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'clickOnDropdownTest')
 data.setCell(0, 2, 'Tests.mainActivityPageTest')
-data.setCell(0, 3, 31768);
+data.setCell(0, 3, 23747);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'clickOnDropdownTest')
+data.setCell(1, 2, 'Tests.productPageTest')
+data.setCell(1, 3, 6785);
 window.suiteTableData['General.apk']= { tableData: data, tableDiv: 'times-div-General.apk'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 31 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-General.apk">
               </div> <!-- times-div-General.apk -->
             </div> <!-- times-div -->
@@ -208,9 +233,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-General.apk" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Tests.productPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">removeApp</span>
+                <br/>
+                <span class="ignored-method-name">setAndroiDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-General.apk" class="panel">
@@ -221,16 +255,26 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.mainActivityPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">getDriver</span>
+                <span class="method-name">setAndroiDriver</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">clickOnDropdownTest</span>
-                <span class="method-start">7364 ms</span>
+                <span class="method-start">12257 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.productPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">clickOnDropdownTest</span>
+                <span class="method-start">36010 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.mainActivityPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">removeApp</span>
-                <span class="method-start">39246 ms</span>
+                <span class="method-start">42939 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

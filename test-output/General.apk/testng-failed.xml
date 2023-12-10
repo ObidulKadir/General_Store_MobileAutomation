@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [General.apk]" guice-stage="DEVELOPMENT">
-  <test name="Test(failed)">
+  <test name="mainActivityPage(failed)">
     <classes>
       <class name="Tests.mainActivityPageTest">
         <methods>
-          <include name="getDriver"/>
-          <include name="mainActivityPageTest"/>
+          <include name="clickOnDropdownTest"/>
           <include name="removeApp"/>
+          <include name="setAndroiDriver"/>
         </methods>
       </class> <!-- Tests.mainActivityPageTest -->
+      <class name="Tests.productPageTest">
+        <methods>
+          <include name="clickOnDropdownTest"/>
+          <include name="removeApp"/>
+          <include name="setAndroiDriver"/>
+        </methods>
+      </class> <!-- Tests.productPageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- mainActivityPage(failed) -->
 </suite> <!-- Failed suite [General.apk] -->
